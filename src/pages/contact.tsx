@@ -1,8 +1,10 @@
-import Image from "next/image";
-import { useTranslation } from 'next-i18next';
+import ContactChannels from "@/components/ContactChannels";
+import ContactForm from "@/components/ContactForm";
+import TitlePage from "@/components/TitlePage";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import nextI18NextConfig from '../../next-i18next.config';
+import { useTranslation } from 'next-i18next';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 type Props = {};
@@ -17,27 +19,23 @@ export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
   },
 });
 
-export default function Home(
+export default function Contact(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation('common');
 
   return (
-    <div className="container px-4">
+    <div className="container text-center">
+      <TitlePage title={t('contact_title')} subtitle={t('contact_subtitle')} />
       <div className="grid grid-cols-2 mt-16">
-        <div>
-          <span className="text-6xl font-bold">{t('greeting')}</span>
-          <h1 className="text-6xl font-bold text-gradient my-4">{t('fullName')}</h1>
-          <h2 className="text-2xl font-bold mt-16 mb-4 text-gray-600 dark:text-gray-400">{t('role')}</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            {t('description')}
-          </p>
+        <div className="px-4">
+          <p className="text-4xl font-bold mb-4 text-cyan-900 dark:text-cyan-400">{t('contact_work_together')}</p>
+          <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 text-justify">{t('contact_description')}</p>
+         <ContactChannels />
         </div>
-        <div className="flex justify-center items-center">
-          <div className="profile-img-container">
-            <Image src="/profile.jpg" alt="Andres Reyes" width={350} height={350} />
-          </div>
+        <div>
+         <ContactForm />
         </div>
       </div>
     </div>

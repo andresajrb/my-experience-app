@@ -1,0 +1,18 @@
+{
+    "greeting": "Hello, I'm",
+    "fullName": "Andrés Reyes",
+    "role": "Full Stack Developer",
+    "description": "I specialize in building web and mobile applications, I like robust and scalable solutions through the JavaScript ecosystem, from robust APIs to Big Data pipelines and AI-powered features.",
+    "nav_home": "Home",
+    "nav_about": "About Me",
+    "nav_contact": "Contact",
+    "about_title": "About Me",
+    "about_subtitle": "Know a little more about my career and skills.",
+    "about_description_1": "I'm a full stack developer passionate about creating technological solutions that make a difference. With more than 5 years of experience in the industry, I've worked on diverse projects from startups to established companies.",
+    "about_description_2": "My focus is on writing clean, maintainable and scalable code, always seeking the best practices and the most appropriate technologies for each project. I love learning constantly and staying updated with the latest trends in web development.",
+    "contact_title": "Contact",
+    "contact_subtitle": "Do you have a project in mind? Let's talk!",
+    "contact_work_together": "Let's work together",
+    "contact_description": "If you have any project idea, want to collaborate or just want to say hello, don't hesitate to contact me. I'll do my best to respond as soon as possible.",
+    "made_with": "Made with"
+  }
