@@ -23,5 +23,7 @@
         "subject": "Subject",
         "message": "Message",
         "sendMessage": "Send Message"
-    }
+    },
+    "messageSent": "Message sent",
+    "errorSendingMessage": "Error sending message"
   }

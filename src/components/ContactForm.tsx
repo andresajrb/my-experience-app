@@ -12,8 +12,7 @@ type FormikValues = {
     message: string;
 }
 
-// const EMAIL_NOTIFICATION_URL = publicEnv.API_BASE_URL + '/myexperience/send-email';
-const EMAIL_NOTIFICATION_URL = publicEnv.API_BASE_URL + '/myexperience/personalinfo';
+const EMAIL_NOTIFICATION_URL = publicEnv.API_BASE_URL + '/myexperience/send-email';
 
 const ContactForm = () => { 
     const { t } = useTranslation('common')
@@ -23,25 +22,24 @@ const ContactForm = () => {
           initialValues={{ name: "", email: "", subject: "", message: "" }}
           onSubmit={(values, { resetForm }) => {
             fetch(EMAIL_NOTIFICATION_URL, {
-              method: 'GET',
-              // method: 'POST',
-              // body: JSON.stringify(values),
-              // headers: {
-              //   'Content-Type': 'application/json'
-              // }
+              method: 'POST',
+              body: JSON.stringify(values),
+              headers: {
+                'Content-Type': 'application/json'
+              }
             }).then(response => response.json())
               .then(data => {
                 console.log(data);
                 if (data.success) {
-                  toast.success("Mensaje enviado");
+                  toast.success(t('messageSent'));
                   resetForm();
                 } else {
-                  toast.error("Error al enviar el mensaje");
+                  toast.error(t('errorSendingMessage'));
                 }
               })
               .catch(error => {
-                console.error('Error al enviar el mensaje:', error);
-                toast.error("Error al enviar el mensaje");
+                console.error(t('errorSendingMessage'), error);
+                toast.error(t('errorSendingMessage'));
               });
           }}
         >

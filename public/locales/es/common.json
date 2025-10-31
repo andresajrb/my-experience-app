@@ -23,5 +23,7 @@
         "subject": "Asunto",
         "message": "Mensaje",
         "sendMessage": "Enviar Mensaje"
-    }
+    },
+    "messageSent": "Mensaje enviado",
+    "errorSendingMessage": "Error al enviar el mensaje"
 }
