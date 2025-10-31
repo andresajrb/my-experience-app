@@ -15,7 +15,6 @@ const ThemeSwitch = () => {
   }, []);
 
   if (!mounted) {
-    // Para evitar el 'hydration mismatch', no renderizamos nada en el servidor.
     return null;
   }
 

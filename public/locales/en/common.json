@@ -14,5 +14,14 @@
     "contact_subtitle": "Do you have a project in mind? Let's talk!",
     "contact_work_together": "Let's work together",
     "contact_description": "If you have any project idea, want to collaborate or just want to say hello, don't hesitate to contact me. I'll do my best to respond as soon as possible.",
-    "made_with": "Made with"
+    "made_with": "Made with",
+    "label": {
+        "email": "Email",
+        "location": "Location",
+        "linkedin": "LinkedIn",
+        "name": "Name",
+        "subject": "Subject",
+        "message": "Message",
+        "sendMessage": "Send Message"
+    }
   }

@@ -14,5 +14,14 @@
     "contact_subtitle": "¿Tienes un proyecto en mente? ¡Hablemos!",
     "contact_work_together": "Trabajemos juntos",
     "contact_description": "Si tienes alguna idea de proyecto, quieres colaborar o simplemente quieres saludar, no dudes en contactarme. Hare lo posible por responderte lo antes posible.",
-    "made_with": "Hecho con"
+    "made_with": "Hecho con",
+    "label": {
+        "email": "Correo electrónico",
+        "location": "Ubicación",
+        "linkedin": "LinkedIn",
+        "name": "Nombre",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "sendMessage": "Enviar Mensaje"
+    }
 }
